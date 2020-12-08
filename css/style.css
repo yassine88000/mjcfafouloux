@@ -1,4 +1,7 @@
-
+body {
+font-family: space mono ;
+}
+h1
 h2 {
     color: #0a4870;
     font-weight: 500;
@@ -13,9 +16,8 @@ ul {
 }
 ul .booking-card {
     position: relative;
-    width: 300px;
     display: flex;
-    flex: 0 0 300px;
+    width: 700px;
     flex-direction: column;
     margin: 20px;
     margin-bottom: 30px;
@@ -72,7 +74,7 @@ ul .booking-card .book-container .content .btn:hover {
 ul .booking-card .informations-container {
     flex: 1 0 auto;
     padding: 20px;
-    background: #f0f0f0;
+    background: red;
     transform: translateY(206px);
     transition: 0.3s;
 }
@@ -81,7 +83,10 @@ ul .booking-card .informations-container .title {
     padding-bottom: 10px;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 2.2em;
+    background-color: white;
+    transform: rotate(-11deg);
+
 }
 ul .booking-card .informations-container .title::after {
     content: "";
@@ -133,34 +138,7 @@ ul .booking-card .informations-container .more-information .disclaimer {
     font-size: 0.8em;
     color: #7d7d7d;
 }
-ul .booking-card:hover::before {
-    background: rgba(10, 72, 112, 0.6);
-}
-ul .booking-card:hover .book-container .content {
-    opacity: 1;
-    transform: translateY(0px);
-}
-ul .booking-card:hover .informations-container {
-    transform: translateY(0px);
-}
-ul .booking-card:hover .informations-container .more-information {
-    opacity: 1;
-}
-@media (max-width: 768px) {
-    ul .booking-card::before {
-        background: rgba(10, 72, 112, 0.6);
-    }
-    ul .booking-card .book-container .content {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-    ul .booking-card .informations-container {
-        transform: translateY(0px);
-    }
-    ul .booking-card .informations-container .more-information {
-        opacity: 1;
-    }
-}
+
 .credits {
     display: table;
     background: #0a4870;
@@ -185,5 +163,5 @@ h1 {
     font-size: 40px;
     color: white;
     background-color: red;
-    position: absolute;
+    width: max-content;
 }
