@@ -26,13 +26,26 @@ h1 {
 .card-title {
     margin-bottom: .75rem;
     position: absolute;
-    top: 45px;
+    top: 100px;
     transform: rotate(-12deg);
     background: white;
     color: red;
 }
 .card-text.dateEvent {
     position: absolute;
-    top: 31%;
+    top: 46%;
     right: 12px;
+    color: red;
+    font-size: 1.25rem;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background-color: red;
+}
+
+h5 {
+    font-size: 2.25rem;
 }
