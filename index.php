@@ -4,209 +4,79 @@
 <head>
     <title>Fafouloux</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body style="background-color: #550155" >
 
     <div class="events"><h1>Evenements à venir </h1></div>
+<div class="container">
+    <div class="card-deck">
+        <div class="card">
+            <img src="image/space.jpeg" class="bd-placeholder-img card-img-top" >
+            <ul class="card-text dateEvent">
+                <li>ceci est une date</li>
+                <li>ceci est une heure</li>
+                <li class="places">Il reste vido places</li>
+            </ul>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card It's a broader card with text below as a natural lead-in to extra content. This content is a little longer. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
 
-<div class="cards1">
-    <ul>
-        <li class="booking-card"
-            style="background-image: url(image/space.jpeg)" width="100" height="200">
-            <div class="book-container">
-                <div class="content">
-                    <button class="btn">Réserver</button>
-                </div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
-            //toutes les infos titre place date desc
-            <div class="informations-container">
-                <h2 class="title">La tete dans les étoiles</h2>
-                <p class="sub-title">sfsfsfdfqdfqlfnqsinqsidsidsdpiqsddvdidqsyidvsisiovspfqpfbqpifvf</p>
-                <p class="price">
-                    15 €
-                </p>
-                <div class="more-information">
-                    <div class="info-and-date-container">
-                        <div class="box info">
-                            <p>Parc des expositions à NANTES</p>
-                        </div>
-                        <div class="box date">
-                            <p>Samedi 1er février 2020</p>
-                        </div>
-                    </div>
-                    <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet
-                        perferendis culpa. Expedita architecto nesciunt, rem distinctio</p>
-                </div>
-            </div>
-        </li>
-        <li class="booking-card"
-            style="background-image: url(image/space.jpeg);">
-            <div class="book-container">
-                <div class="content">
-                    <button class="btn">Réserver</button>
-                </div>
-            </div>
-            <div class="informations-container">
-                <h2 class="title">La tete dans les étoiles</h2>
-                <p class="sub-title">Et moi je suis un 2ème sous-titre</p>
-                <p class="price">
-                    35 €
-                </p>
-                <div class="more-information">
-                    <div class="info-and-date-container">
-                        <div class="box info">
+        </div>
+        <div class="card">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
 
-                            <p>La tete dans les étoiles</p>
-                   -     </div>
-                        <div class="box date">
-                            <p>À partir du Dimanche 3 Juin 2020</p>
-                        </div>
-                    </div>
-                    <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet
-                        perferendis culpa. Expedita architecto nesciunt, rem distinctio</p>
-                </div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card It's a broader card with text below as a natural lead-in to extra content. This content is a little longer. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
-        </li>
-        <li class="booking-card"
-            style="background-image: url(image/space.jpeg);">
-            <div class="book-container">
-                <div class="content">
-                    <button class="btn">Réserver</button>
-                </div>
-            </div>
-            <div class="informations-container">
-                <h2 class="title">La tete dans les étoiles</h2>
-                <p class="sub-title">Encore un sous-titre</p>
-                <p class="price">
-                    20 €
-                </p>
-                <div class="more-information">
-                    <div class="info-and-date-container">
-                        <div class="box info">
-                            <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                      d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/>
-                            </svg>
-                            <p>Le Trident à CHERBOURG</p>
-                        </div>
-                        <div class="box date">
-                            <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                      d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z"/>
-                            </svg>
-                            <p>Février 2020</p>
-                        </div>
-                    </div>
-                    <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet
-                        perferendis culpa. Expedita architecto nesciunt, rem distinctio</p>
-                </div>
-            </div>
-        </li>
-    </ul>
-</div>
-
-    <div class="cards2">
-        <ul>
-            <li class="booking-card"
-                style="background-image: url(image/space.jpeg)">
-                <div class="book-container">
-                    <div class="content">
-                        <button class="btn">Réserver</button>
-                    </div>
-                </div>
-                <div class="informations-container">
-                    <h2 class="title">La tete dans les étoiles</h2>
-                    <p class="sub-title">Et moi un je suis sous-titre</p>
-                    <p class="price">
-                        15 €
-                    </p>
-                    <div class="more-information">
-                        <div class="info-and-date-container">
-                            <div class="box info">
-                                <p>Parc des expositions à NANTES</p>
-                            </div>
-                            <div class="box date">
-                                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                          d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z"/>
-                                </svg>
-                                <p>Samedi 1er février 2020</p>
-                            </div>
-                        </div>
-                        <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet
-                            perferendis culpa. Expedita architecto nesciunt, rem distinctio</p>
-                    </div>
-                </div>
-            </li>
-            <li class="booking-card"
-                style="background-image: url(image/space.jpeg);">
-                <div class="book-container">
-                    <div class="content">
-                        <button class="btn">Réserver</button>
-                    </div>
-                </div>
-                <div class="informations-container">
-                    <h2 class="title">La tete dans les étoiles</h2>
-                    <p class="sub-title">Et moi je suis un 2ème sous-titre</p>
-                    <p class="price">
-                        35 €
-                    </p>
-                    <div class="more-information">
-                        <div class="info-and-date-container">
-                            <div class="box info">
-                                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                          d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/>
-                                </svg>
-                                <p>La tete dans les étoiles</p>
-                                -     </div>
-                            <div class="box date">
-                                <p>À partir du Dimanche 3 Juin 2020</p>
-                            </div>
-                        </div>
-                        <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet
-                            perferendis culpa. Expedita architecto nesciunt, rem distinctio</p>
-                    </div>
-                </div>
-            </li>
-            <li class="booking-card"
-                style="background-image: url(image/space.jpeg);">
-                <div class="book-container">
-                    <div class="content">
-                        <button class="btn">Réserver</button>
-                    </div>
-                </div>
-                <div class="informations-container">
-                    <h2 class="title">La tete dans les étoiles</h2>
-                    <p class="sub-title">Encore un sous-titre</p>
-                    <p class="price">
-                        20 €
-                    </p>
-                    <div class="more-information">
-                        <div class="info-and-date-container">
-                            <div class="box info">
-                                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                          d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/>
-                                </svg>
-                                <p>Le Trident à CHERBOURG</p>
-                            </div>
-                            <div class="box date">
-                                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                          d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z"/>
-                                </svg>
-                                <p>Février 2020</p>
-                            </div>
-                        </div>
-                        <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet
-                            perferendis culpa. Expedita architecto nesciunt, rem distinctio</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
+        </div>
     </div>
+    <br>
+
+    <div class="card-deck">
+        <div class="card" >
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card It's a broader card with text below as a natural lead-in to extra content. This content is a little longer. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card It's a broader card with text below as a natural lead-in to extra content. This content is a little longer. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
