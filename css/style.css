@@ -76,29 +76,24 @@ ul .booking-card .informations-container {
     padding: 20px;
     background: red;
     transform: translateY(206px);
-    transition: 0.3s;
+    margin-bottom: 10%;
 }
 ul .booking-card .informations-container .title {
-    position: relative;
+    position: absolute;
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 80px;
     font-weight: bold;
     font-size: 2.2em;
     background-color: white;
     transform: rotate(-11deg);
+    color: #b40000;
+    height: 50px;
+    width: 555px;
+    margin-top: -7em;
+    margin-left: 1px;
+}
 
-}
-ul .booking-card .informations-container .title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    width: 50px;
-    margin: auto;
-    background: #0a4870;
-}
+
 ul .booking-card .informations-container .price {
     display: flex;
     align-items: center;
