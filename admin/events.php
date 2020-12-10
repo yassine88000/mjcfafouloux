@@ -1,6 +1,4 @@
 <?php
-//include("fichier/header.php")
-//include("fichier/footer.php)
 ?>
 <html>
 <head>
@@ -14,13 +12,4 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body style="background-color: #550155" >
-<div class="events"><h1> Inscription à La tête dans les étoiles </h1></div>
-<div class="container">
-
-
-
-<h1>fkzOZK</h1>
-
-
-</body>
-</html>
+<div class="title-entry"><h1> Gestion des événements </h1></div>

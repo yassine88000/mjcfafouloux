@@ -48,7 +48,7 @@
                 <h5 class="card-title">La tête dans les étoiles</h5>
                 <p class="card-text">This is a longer card It's a broader card with text below as a natural lead-in to
                     extra content. This content is a little longer. This content is a little bit longer.</p>
-                <p class="card-validate" href="fichier/entries.php">JE PARTICIPE</p>
+                <p class="card-validate">JE PARTICIPE</p>
             </div>
         </div>
         <!--Carte 3 -->
