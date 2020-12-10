@@ -1,5 +1,4 @@
-<?php
-
+<?php $db = new PDO('mysql:host=localhost;dbname=mjcfou;charset=utf8','ysali','Yassine123*');
 ?>
 <!DOCTYPE html >
 <html lang="fr">
@@ -11,5 +10,6 @@
     <!-- CSS -->
 <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-</html>
+<body>
+
 

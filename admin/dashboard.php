@@ -1,8 +1,12 @@
 <?php
+
+include("fichier/header.php");
+//include("fichier/footer.php);
 ?>
+
 <html>
 <head>
-    <title>Inscription</title>
+    <title>Espace Administrateur</title>
     <meta charset="utf-8"/>
     <!--Font Space mono-->
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">

@@ -1,9 +1,10 @@
 <?php
-//include("fichier/header.php")
+include("fichier/header.php");
+include("fichier/header.php")
 ?>
 <html>
 <head>
-    <title>Inscription</title>
+    <title>Fafouloux</title>
     <meta charset="utf-8"/>
 
     <!--Font Space mono-->
