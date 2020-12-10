@@ -6,7 +6,7 @@
 	$sql = 'SELECT rooms.room_id, rooms.* FROM rooms';
 
 	$liste = $db->query ( $sql )->fetchAll ( PDO::FETCH_UNIQUE | PDO::FETCH_ASSOC );
-var_dump($db); die();
+echo '<pre>'; var_dump($liste); die();
 
 ?>
 <!DOCTYPE html>
