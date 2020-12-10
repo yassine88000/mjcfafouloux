@@ -1,8 +1,11 @@
 <?php
+//insertion header qui contient la connexion db)
+include("fichier/header.php")
+//include("fichier/footer.php)
 ?>
 <html>
 <head>
-    <title>Inscription</title>
+    <title>Gestion des événements</title>
     <meta charset="utf-8"/>
     <!--Font Space mono-->
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
@@ -13,3 +16,25 @@
 </head>
 <body style="background-color: #550155" >
 <div class="title-entry"><h1> Gestion des événements </h1></div>
+<div class="table-responsive">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+        <tr>
+            <th>ID Salle</th>
+            <th>Nom de l'evenement</th>
+            <th>Salle de l'evenement</th>
+            <th>Nombre de place restante</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th>ID Salle</th>
+            <th>Nom de l'evenement</th>
+            <th>Salle de l'evenement</th>
+            <th>Nombre de place restante</th>
+            <th>Description</th>
+        </tr>
+        </tfoot>
+
+    </table>

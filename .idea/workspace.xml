@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b30d0409-5196-489f-85ac-93463daa7d6a" name="Default Changelist" comment="Ajout commentaire + css sur les cartes + footer + header en cours">
-      <change afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/events.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inscription.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/room.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entries.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/events.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fichier/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/fichier/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fichier/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/fichier/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscription.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607343813632</updated>
-      <workItem from="1607343814865" duration="53795000" />
+      <workItem from="1607343814865" duration="61713000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit, avec la premiere dbdesign.pdf ( qui va etre modifié )">
       <created>1607344540709</created>
@@ -151,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607557201397</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Ajout commentaire + css sur les cartes + footer + header en cours">
+      <created>1607558536282</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1607558536282</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,5 +1,5 @@
 <?php
-//include("fichier/header.php")
+include("fichier/header.php")
 //include("fichier/footer.php)
 ?>
 <html>
