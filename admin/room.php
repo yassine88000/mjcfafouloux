@@ -6,7 +6,7 @@
 	$sql = 'SELECT rooms.room_id, rooms.* FROM rooms';
 
 	$liste = $db->query ( $sql )->fetchAll ( PDO::FETCH_UNIQUE | PDO::FETCH_ASSOC );
-echo '<pre>'; var_dump($liste); die();
+
 
 ?>
 <!DOCTYPE html>
@@ -32,6 +32,7 @@ echo '<pre>'; var_dump($liste); die();
   	<tbody>
 	<?php
 		foreach ( $liste as $item ) {
+            echo '<pre>'; var_dump($item); die();
     ?>
     	<tr>
     		<td><?php echo $item.idRoom ?></td>

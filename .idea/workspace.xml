@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b30d0409-5196-489f-85ac-93463daa7d6a" name="Default Changelist" comment="Ajout commentaire + css sur les cartes + footer + header en cours">
-      <change afterPath="$PROJECT_DIR$/admin/room.php" afterDir="false" />
+    <list default="true" id="b30d0409-5196-489f-85ac-93463daa7d6a" name="Default Changelist" comment="Connexion a la db, Ajout de l'espace Admin/ Room pour afficher les données dans un premier temps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/events.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/events.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fichier/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/fichier/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fichier/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/fichier/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/room.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/room.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607343813632</updated>
-      <workItem from="1607343814865" duration="61713000" />
+      <workItem from="1607343814865" duration="62704000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit, avec la premiere dbdesign.pdf ( qui va etre modifié )">
       <created>1607344540709</created>
@@ -159,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607558536282</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Connexion a la db, Ajout de l'espace Admin/ Room pour afficher les données dans un premier temps">
+      <created>1607599540207</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607599540207</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +173,7 @@
     <MESSAGE value="modification de la db, mise en place des cards pour les events sur l'index" />
     <MESSAGE value="integration carte avec bootstrap, modification css pour se rapprocher de la maquette" />
     <MESSAGE value="Ajout commentaire + css sur les cartes + footer + header en cours" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout commentaire + css sur les cartes + footer + header en cours" />
+    <MESSAGE value="Connexion a la db, Ajout de l'espace Admin/ Room pour afficher les données dans un premier temps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connexion a la db, Ajout de l'espace Admin/ Room pour afficher les données dans un premier temps" />
   </component>
 </project>
