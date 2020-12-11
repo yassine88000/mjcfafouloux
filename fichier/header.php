@@ -1,4 +1,4 @@
-<?php $db = new PDO('mysql:host=localhost;dbname=mjcfou;charset=utf8','ysali','Yassine123*');
+<?php $db = new PDO('mysql:host=localhost;dbname=mjcfou;charset=utf8','root','');
 ?>
 <!DOCTYPE html >
 <html lang="fr">

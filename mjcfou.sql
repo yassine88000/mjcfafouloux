@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `mjcfou`
+-- Base de données :  `mjcfou`
 --
 
 -- --------------------------------------------------------
@@ -28,15 +28,16 @@ SET time_zone = "+00:00";
 -- Structure de la table `entries`
 --
 
-CREATE TABLE `entries` (
-  `entry_id` int(11) NOT NULL,
-  `email` varchar(50) NOT NULL,
+DROP TABLE IF EXISTS `entries`;
+CREATE TABLE IF NOT EXISTS `entries` (
+  `entry_id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(30) NOT NULL,
   `phonenumber` varchar(30) NOT NULL,
   `name` varchar(30) NOT NULL,
   `firstname` varchar(30) NOT NULL,
   `participant` int(4) NOT NULL,
-  `event_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`entry_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -44,9 +45,11 @@ CREATE TABLE `entries` (
 -- Structure de la table `events`
 --
 
-CREATE TABLE `events` (
-  `event_id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `events`;
+CREATE TABLE IF NOT EXISTS `events` (
+  `event_id` int(11) NOT NULL AUTO_INCREMENT,
   `active` tinyint(1) NOT NULL,
+  `start_date` datetime NOT NULL,
   `end_date` datetime NOT NULL,
   `name` varchar(30) NOT NULL,
   `description` text NOT NULL,
@@ -56,8 +59,23 @@ CREATE TABLE `events` (
   `type` varchar(50) NOT NULL,
   `image` varchar(50) NOT NULL,
   `info` text NOT NULL,
-  `is_free` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `is_free` tinyint(1) NOT NULL,
+  PRIMARY KEY (`event_id`),
+  KEY `events_fk0` (`room_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `events`
+--
+
+INSERT INTO `events` (`event_id`, `active`, `start_date`, `end_date`, `name`, `description`, `price`, `room_id`, `is_cancelled`, `type`, `image`, `info`, `is_free`) VALUES
+(1, 1, '2020-12-10 00:00:00', '2020-12-10 00:00:00', 'La tfête dans les Ã©toiles', 'Description La tÃªte dans les Ã©toiles 1', 15, 1, 0, 'type1', 'image.png', 'Les infos', 0),
+(3, 1, '2020-11-11 00:00:00', '2020-11-11 00:00:00', 'La tfête dans les Ã©toiles', 'Description La tÃªte dans les Ã©toiles 1', 15, 2, 0, 'type2', 'image.png', 'info', 0),
+(4, 1, '2020-11-11 00:00:00', '2020-11-11 00:00:00', 'La tfête dans les Ã©toiles', 'Description La tÃªte dans les Ã©toiles 1', 15, 3, 0, 'type2', 'image.png', 'info', 0),
+(5, 1, '2020-11-11 00:00:00', '2020-11-11 00:00:00', 'La tfête dans les Ã©toiles', 'Description La tÃªte dans les Ã©toiles 1', 15, 3, 0, 'type2', 'image.png', 'info', 0),
+(6, 1, '2020-12-10 00:00:00', '2020-12-10 00:00:00', 'La tfête dans les Ã©toiles', 'Description La tÃªte dans les Ã©toiles 1', 15, 1, 0, 'type1', 'image.png', 'infooooooooo', 0),
+(7, 1, '2020-12-10 00:00:00', '2020-12-10 00:00:00', 'La tfête dans les Ã©toiles', 'Description La tÃªte dans les Ã©toiles 1', 15, 1, 0, 'type1', 'image.png', 'infooooooooo', 0),
+(8, 1, '2020-12-10 00:00:00', '2020-12-10 00:00:00', 'La tfête dans les Ã©toiles', 'Description La tÃªte dans les Ã©toiles 1', 15, 1, 0, 'type1', 'image.png', 'infooooooooo', 0);
 
 -- --------------------------------------------------------
 
@@ -65,12 +83,17 @@ CREATE TABLE `events` (
 -- Structure de la table `payments`
 --
 
-CREATE TABLE `payments` (
-  `payment_id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `payments`;
+CREATE TABLE IF NOT EXISTS `payments` (
+  `payment_id` int(11) NOT NULL AUTO_INCREMENT,
   `entry_id` int(11) NOT NULL,
   `event_id` int(11) NOT NULL,
-  `paiement_success` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `transaction_number` varchar(250) DEFAULT NULL,
+  `payment_mode` varchar(50) NOT NULL,
+  PRIMARY KEY (`payment_id`),
+  KEY `payments_fk0` (`entry_id`),
+  KEY `payments_fk1` (`event_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -78,48 +101,25 @@ CREATE TABLE `payments` (
 -- Structure de la table `rooms`
 --
 
-CREATE TABLE `rooms` (
-  `room_id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `rooms`;
+CREATE TABLE IF NOT EXISTS `rooms` (
+  `room_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(30) NOT NULL,
   `description` text NOT NULL,
-  `seats` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `seats` int(11) NOT NULL,
+  PRIMARY KEY (`room_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `rooms`
 --
 
 INSERT INTO `rooms` (`room_id`, `name`, `description`, `seats`) VALUES
-(12, 'salle spectacle', 'salle de spectacle contenant 255 places avec climatisation.', 255);
-
---
--- Index pour les tables déchargées
---
-
---
--- Index pour la table `entries`
---
-ALTER TABLE `entries`
-  ADD PRIMARY KEY (`entry_id`);
-
---
--- Index pour la table `events`
---
-ALTER TABLE `events`
-  ADD PRIMARY KEY (`event_id`);
-
---
--- Index pour la table `payments`
---
-ALTER TABLE `payments`
-  ADD PRIMARY KEY (`payment_id`),
-  ADD KEY `entry_id` (`entry_id`);
-
---
--- Index pour la table `rooms`
---
-ALTER TABLE `rooms`
-  ADD PRIMARY KEY (`room_id`);
+(1, 'Salle1', 'Salle1', 50),
+(2, 'Salle2', 'Salle2', 60),
+(3, 'Salle3', 'Salle3', 35),
+(4, 'Salle4', 'Salle4', 25),
+(5, 'Salle5', 'Salle5', 75);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
