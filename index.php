@@ -114,7 +114,7 @@ include('fichier/config.php');
         </div>
         <?php  }?>
 
-        // fin de boucle
+        }// fin de boucle
 
 
 
