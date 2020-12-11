@@ -63,14 +63,11 @@
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-
+	            <th>ID Salle</th>
 	            <th>Nom de l'evenement</th>
-                <th>Date de début</th>
-                <th>Date de fin</th>
 	            <th>Salle de l'evenement</th>
 	            <th>Nombre de place restante</th>
 	            <th>Description</th>
-                <th>Prix</th>
             </tr>
           </thead>
           <tbody>
