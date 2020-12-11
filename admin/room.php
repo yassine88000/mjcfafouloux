@@ -32,16 +32,17 @@
   	<tbody>
 	<?php
 		foreach ( $liste as $item ) {
-            echo '<pre>'; var_dump($item); die();
+
     ?>
     	<tr>
-    		<td><?php echo $item.idRoom ?></td>
+    		<td><?php echo $item.room_id ?></td>
     		<td><?php echo $item.name ?></td>
     		<td><?php echo $item.description ?></td>
     		<td><?php echo $item.seats ?></td>
     	</tr>
     <?php
         }
+
 	?>
   	</tbody>
   </table>

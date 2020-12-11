@@ -1,119 +1,143 @@
-<?php
-include("fichier/header.php");
-include("fichier/header.php")
-?>
-<html>
-<head>
-    <title>Fafouloux</title>
-    <meta charset="utf-8"/>
 
-    <!--Font Space mono-->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-    <!--Liaison bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--CSS -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
-<!-- Background couleur-->
-<body style="background-color: #550155">
-<!--Titre -->
-<div class="events"><h1>Evenements à venir </h1></div>
-<div class="container">
-    <!--Cartes des évenements-->
-    <div class="card-deck">
-        <!--Carte 1 -->
-        <div class="card">
-            <img src="image/space.jpeg" class="bd-placeholder-img card-img-top">
-            <ul class="card-text dateEvent">
-                <li>le 12 Decembre 2020 21h00</li>
-                <li>ceci est une heure</li>
-                <li class="places">Il reste 42 places</li>
-            </ul>
-            <div class="card-body">
-                <h5 class="card-title">La tête dans les étoiles</h5>
-                <p class="card-text">This is a longer card It's a broader card with text below as a natural lead-in to
-                    extra content. This content is a little longer. This content is a little bit longer.</p>
-                <p class="card-validate">JE PARTICIPE</p>
-            </div>
+<?php
+session_start();
+include('fichier/config.php');
+
+?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Album example · Bootstrap v5.0</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
         </div>
-        <!--Carte 2 -->
-        <div class="card">
-            <img src="image/space.jpeg" class="bd-placeholder-img card-img-top">
-            <ul class="card-text dateEvent">
-                <li>ceci est une date</li>
-                <li>ceci est une heure</li>
-                <li class="places">Il reste vido places</li>
-            </ul>
-            <div class="card-body">
-                <h5 class="card-title">La tête dans les étoiles</h5>
-                <p class="card-text">This is a longer card It's a broader card with text below as a natural lead-in to
-                    extra content. This content is a little longer. This content is a little bit longer.</p>
-                <p class="card-validate">JE PARTICIPE</p>
-            </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
         </div>
-        <!--Carte 3 -->
-        <div class="card">
-            <img src="image/space.jpeg" class="bd-placeholder-img card-img-top">
-            <ul class="card-text dateEvent">
-                <li>ceci est une date</li>
-                <li>ceci est une heure</li>
-                <li class="places">Il reste vido places</li>
-            </ul>
-            <div class="card-body">
-                <h5 class="card-title">La tête dans les étoiles</h5>
-                <p class="card-text">This is a longer card It's a broader card with text below as a natural lead-in to
-                    extra content. This content is a little longer. This content is a little bit longer.</p>
-                <p class="card-validate">JE PARTICIPE</p>
-            </div>
-        </div>
-        <div class="card-deck">
-            <!--Carte 4 -->
-            <div class="card">
-                <img src="image/space.jpeg" class="bd-placeholder-img card-img-top">
-                <ul class="card-text dateEvent">
-                    <li>ceci est une date</li>
-                    <li>ceci est une heure</li>
-                    <li class="places">Il reste vido places</li>
-                </ul>
-                <div class="card-body">
-                    <h5 class="card-title">La tête dans les étoiles</h5>
-                    <p class="card-text">This is a longer card It's a broader card with text below as a natural lead-in
-                        to extra content. This content is a little longer. This content is a little bit longer.</p>
-                    <p class="card-validate">JE PARTICIPE</p>
-                </div>
-            </div>
-            <!--Carte 5 -->
-            <div class="card">
-                <img src="image/space.jpeg" class="bd-placeholder-img card-img-top">
-                <ul class="card-text dateEvent">
-                    <li>ceci est une date</li>
-                    <li>ceci est une heure</li>
-                    <li class="places">Il reste vido places</li>
-                </ul>
-                <div class="card-body">
-                    <h5 class="card-title">La tête dans les étoiles</h5>
-                    <p class="card-text">This is a longer card It's a broader card with text below as a natural lead-in
-                        to extra content. This content is a little longer. This content is a little bit longer.</p>
-                    <p class="card-validate">JE PARTICIPE</p>
-                </div>
-            </div>
-            <!--Carte 6 -->
-            <div class="card">
-                <img src="image/space.jpeg" class="bd-placeholder-img card-img-top">
-                <ul class="card-text dateEvent">
-                    <li>ceci est une date</li>
-                    <li>ceci est une heure</li>
-                    <li class="places">Il reste vido places</li>
-                </ul>
-                <div class="card-body">
-                    <h5 class="card-title">La tête dans les étoiles</h5>
-                    <p class="card-text">This is a longer card It's a broader card with text below as a natural lead-in
-                        to extra content. This content is a little longer. This content is a little bit longer.</p>
-                    <p class="card-validate">JE PARTICIPE</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</body>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>Album</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Album example</h1>
+      </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+        // ici la boucle
+          <?php
+          $sql=mysqli_query($con,"select * from events");
+          $cnt=1;
+          while($row=mysqli_fetch_array($sql))
+          {
+          ?>
+
+        <div class="col">
+          <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"><td><?php echo $row['eventname'];?></td></text></svg>
+          <p class="card-text"><?php echo $row['eventstart_date'] ?> </p>
+
+
+          <p class="card-text">  <?php echo $row['seats'];?> </p>
+          <p class="card-text"> <?php echo $row['eventis_free'];?>  </p>
+              <p class="card-text"> <?php echo $row['eventprice'];?>  </p>
+            <div class="card-body">
+                <p class="card-text"> <?php echo $row['eventdescription'];?>  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php  }?>
+
+        // fin de boucle
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
 </html>
